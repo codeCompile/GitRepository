@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkipediaApplication", "AkipediaApplication\AkipediaApplication.csproj", "{B9A86E2A-3A49-480C-889E-52DC18C0719C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkipediaApplication.Tests", "AkipediaApplication.Tests\AkipediaApplication.Tests.csproj", "{5072F817-2DDF-4C59-A219-2A4E0BE5D588}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9A86E2A-3A49-480C-889E-52DC18C0719C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A86E2A-3A49-480C-889E-52DC18C0719C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A86E2A-3A49-480C-889E-52DC18C0719C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A86E2A-3A49-480C-889E-52DC18C0719C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5072F817-2DDF-4C59-A219-2A4E0BE5D588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5072F817-2DDF-4C59-A219-2A4E0BE5D588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5072F817-2DDF-4C59-A219-2A4E0BE5D588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5072F817-2DDF-4C59-A219-2A4E0BE5D588}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
