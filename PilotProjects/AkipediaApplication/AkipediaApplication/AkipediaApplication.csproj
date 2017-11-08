@@ -214,6 +214,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AutoSuggestController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MeController.cs" />
@@ -221,6 +222,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AutoSuggestItem.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MeViewModels.cs" />
@@ -230,6 +232,33 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\dictionary\PartsAll\a.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\b.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\c.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\d.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\e.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\f.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\g.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\general.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\h.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\i.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\j.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\k.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\l.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\m.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\n.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\o.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\p.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\q.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\r.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\s.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\t.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\u.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\v.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\w.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\x.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\y.txt" />
+    <Content Include="App_Data\dictionary\PartsAll\z.txt" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Content\bootstrap.css" />
@@ -259,6 +288,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="App_Data\dictionary\words.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\ThinkTank - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\ThinkTank - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -318,7 +350,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="WordList\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
