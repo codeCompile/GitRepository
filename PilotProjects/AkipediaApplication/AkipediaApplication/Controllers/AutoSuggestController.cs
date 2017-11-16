@@ -6,11 +6,14 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 //using System.Web.Mvc;
 
 namespace AkipediaApplication.Controllers
 {
-
+    //Apply the  EnableCorsAttribute on the controller class can also apply it at a method level if you wish to do so.
+    //To disable CORS for a specific action apply[DisableCors] on that specific action
+    [EnableCorsAttribute("*", "*", "*")]
     public class AutoSuggestController : ApiController
     {
         public AutoSuggestController()

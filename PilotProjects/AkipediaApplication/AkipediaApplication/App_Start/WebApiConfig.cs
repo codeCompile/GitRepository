@@ -22,7 +22,11 @@ namespace AkipediaApplication
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
+            //EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
+            //Alternatively to make ASP.NET Web API Service return JSONP formatted data
+            //var jsonpFormatter = new JsonpMediaTypeFormatter(config.Formatters.JsonFormatter);
+            //config.Formatters.Insert(0, jsonpFormatter);
+            config.EnableCors();
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
