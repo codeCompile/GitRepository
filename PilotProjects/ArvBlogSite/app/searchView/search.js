@@ -1,14 +1,9 @@
 'use strict';
 
-angular.module('myApp.view1', ['ui.router'])
+angular.module('myApp.searchView', ['ui.router'])
 
-// .config(['$routeProvider', function($routeProvider) {
-//   $routeProvider.when('/view1', {
-//     templateUrl: 'view1/view1.html'
-//   });
-// }])
 
-.service('autoSuggestService1', function ($http) {
+.service('autoSuggestService', function ($http) {
            var url = 'http://thinktank.azurewebsites.net/api/AutoSuggest/GetAutoSuggestionItems';
     return {
         get: function (inputStr) {
@@ -18,7 +13,7 @@ angular.module('myApp.view1', ['ui.router'])
         }
     };
 })
-.controller('autoSuggestController1', function ($scope, autoSuggestService) {
+.controller('autoSuggestController', function ($scope, autoSuggestService) {
     //autoSuggestService.get('s').then(function (data) {
     //    $scope.items = data;
     //});
@@ -38,7 +33,7 @@ angular.module('myApp.view1', ['ui.router'])
     };
 })
 
-.directive('autosuggest1', function ($timeout) {
+.directive('autosuggest', function ($timeout) {
     return {
         restrict: 'AEC',
         scope: {
@@ -73,6 +68,6 @@ angular.module('myApp.view1', ['ui.router'])
                 scope.current = index;
             };
         },
-        templateUrl: "view1/templateAutoSuggest.html"
+        templateUrl: "searchView/templateAutoSuggest.html"
     };
 });
